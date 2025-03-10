@@ -1,4 +1,6 @@
-import Api_Key;
+require('dotenv').config({ path: 'stash.env' });
+
+const apiKey = process.env.API_KEY;
 async function getTime(){
     let button = document.getElementById("finder");
     
