@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Time System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome to International Time System</h2>
+        <h3>Rotate the clock on your taps</h3>
+
+        <div class="card">
+            <img src="istockphoto-133313561-612x612.jpg" alt="Clock Image" id="clock-image">
+            <p>Enter the city you want the time of:</p>
+            <input id="location" type="text" placeholder="Enter your location">
+            <button id="finder" onclick="getTime()">Search</button>
+            <div id="response"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
