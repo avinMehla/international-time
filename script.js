@@ -1,4 +1,4 @@
-const apiKey = "c9ea3a9ed181760d48475ff59c0c5a8d";
+
 
 async function getTime() {
     let button = document.getElementById("finder");
@@ -20,7 +20,7 @@ async function getTime() {
 
     try {
         // Fetch latitude and longitude
-        const geoResponse = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${apiKey}`);
+        const geoResponse = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${abc}`);
         const geoData = await geoResponse.json();
 
         if (!geoData.length) {
