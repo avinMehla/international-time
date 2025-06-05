@@ -1,6 +1,7 @@
-require('dotenv').config({ path: 'stash.env' });
+//require('dotenv').config({ path: 'stash.env' });
 
-const apiKey = stash.env.API_KEY;
+//const apiKey = stash.env.API_KEY;
+const abc = "c9ea3a9ed181760d48475ff59c0c5a8d";
 async function getTime(){
     let button = document.getElementById("finder");
     
@@ -15,7 +16,7 @@ async function getTime(){
     const answer = document.getElementById("response");
     
     try{
-        const jgah =  await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${apiKey}`);
+        const jgah =  await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=5&appid=${abc}`);
         const place =  await jgah.json();
         const x = place[0]["lat"];
         const y = place[0]["lon"];
